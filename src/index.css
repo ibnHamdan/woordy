@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   text-align: centerß;
@@ -29,13 +20,28 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  margin: 0 0 30px 0;
-  color: #333;
+  margin: 10px 0 5px 0;
+  color: #cfffcf;
   text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  width: 90vw;
+  max-width: 350px;
+}
+
+.center {
+  width: 90%;
+  margin: 25px auto;
 }
 
 /* rows */
@@ -48,8 +54,8 @@ h1 {
 
 .row>div {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #bbb;
   margin: 4px;
   text-align: center;
@@ -99,19 +105,24 @@ h1 {
 }
 
 .keypad {
-  max-width: 500px;
   margin: 20px auto;
-  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 106%; */
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .keypad>div {
   margin: 5px;
-  width: 40px;
-  height: 50px;
+  width: 33px;
+  height: 33px;
   background: #eee;
   display: inline-block;
   border-radius: 6px;
-  line-height: 50px;
+  color: black;
+  text-align: center;
 }
 
 .keypad>div.green {
