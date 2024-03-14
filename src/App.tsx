@@ -215,7 +215,7 @@
     );
   };
 
-  const Keypad: FC<{usedkeys?: []}> = ({usedkeys}) => {
+  const Keypad: FC<{usedkeys?: []}> = () => {
     const upperRow = ["د", "ج", "ح", "خ", "هـ", "ع", "غ", "ف", "ق", "ث", "ص", "ض"]
     const middleRow = ["ط", "ك", "م", "ن", "ت", "ا", "أ", "ل", "ب", "ي", "س", "ش"]
     const lowerLower = [ "ظ","ز", "و", "ة","إدخال", "ى", "ر", "ؤ", "ء", "ئ", "مسح"];
