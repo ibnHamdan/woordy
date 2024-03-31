@@ -22,7 +22,7 @@ body {
 h1 {
   font-size: 2em;
   line-height: 1.1;
-  margin: 10px 0 5px 0;
+  margin: 5px 0 5px 0;
   color: #cfffcf;
   text-align: center;
 }
@@ -32,16 +32,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .inputs {
-  width: 90vw;
+  width: 92vw;
   max-width: 350px;
 }
 
 .center {
-  width: 90%;
-  margin: 25px auto;
+  width: 100%;
+  margin: 10px auto 0 auto;
 }
 
 /* rows */
@@ -54,13 +55,12 @@ h1 {
 
 .row>div {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: -webkit-fill-available;
+  height: 55px;
   border: 1px solid #bbb;
   margin: 4px;
   text-align: center;
-  line-height: 60px;
-  text-transform: uppercase;
+
   font-weight: bold;
   font-size: 2.5em;
   overflow: hidden;
@@ -105,24 +105,26 @@ h1 {
 }
 
 .keypad {
-  margin: 20px auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   /* width: 106%; */
   /* align-items: center; */
   justify-content: center;
+  width: 95%;
 }
 
 .keypad>div {
-  margin: 5px;
-  width: 33px;
-  height: 33px;
+  margin: 5px 4px;
+  width: 30px;
+  height: 40px;
   background: #eee;
   display: inline-block;
   border-radius: 6px;
   color: black;
   text-align: center;
+  line-height: 2;
 }
 
 .keypad>div.green {
